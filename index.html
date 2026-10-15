@@ -91,9 +91,8 @@
         </div>
         <p class="paper-lead">문장의 감정을 바꾸는 데서 더 나아가, <strong>원하는 단어의 감정 강도만 조절할 수 있을까?</strong> 단어별 강도 정답이 없는 데이터에서 출발해, 중립 음성과 감정 음성의 차이를 새로운 학습 신호로 활용했습니다.</p>
         <figure class="paper-figure">
-          <!-- Replace this image with the original paper architecture when ready. -->
-          <button class="figure-button" type="button" aria-label="연구 개념도 크게 보기"><img src="assets/figures/erv-overview.svg" width="1200" height="500" alt="중립과 감정 발화의 차이에서 단어별 감정 벡터를 만들고 음성합성에 활용하는 연구 개념도" loading="lazy"><span class="figure-expand" aria-hidden="true">Expand figure ↗</span></button>
-          <figcaption><span>Figure 1.</span> Paired speech differences as a signal for word-level emotional control. <span class="figure-note">Conceptual overview</span></figcaption>
+          <button class="figure-button" type="button" aria-label="논문 모델 구조도 크게 보기"><img src="assets/figures/erv-architecture.svg" width="4137" height="1842" alt="논문 그림 1: 전체 음성합성 구조와 Residual Injection Module, Projected-ERV Predictor, ERV 추출 과정" loading="lazy"><span class="figure-expand" aria-hidden="true">Expand figure ↗</span></button>
+          <figcaption><span>Figure 1.</span> Overall architecture, residual injection, ERV prediction and extraction. <span class="figure-note">Interspeech 2026, Figure 1</span></figcaption>
         </figure>
         <div class="paper-details">
           <div><h4>Research problem</h4><p>기존의 문장 단위 감정 조건만으로는 특정 단어의 표현을 세밀하게 바꾸기 어렵습니다. 단어별 감정 강도 라벨이 없다는 점도 학습의 제약이었습니다.</p></div>
@@ -111,9 +110,8 @@
         <p class="authors">Gaeun Kim, <strong>Jihyun Park</strong>, Sohee Jang, Joon-Hyuk Chang</p>
         <p class="paper-lead">화자의 지역 억양과 모국어 정보를 더하면 운율을 더 잘 예측할 수 있을까? <strong>정보를 추가하는 것 자체보다, 어떤 예측 대상과 사용 조건에서 도움이 되는지</strong>를 확인하는 데 초점을 맞췄습니다.</p>
         <figure class="paper-figure">
-          <!-- Replace this image with the original paper architecture when ready. -->
-          <button class="figure-button" type="button" aria-label="연구 개념도 크게 보기"><img src="assets/figures/prosody-overview.svg" width="1200" height="500" alt="텍스트와 화자 메타데이터로 운율을 예측하고 학습 화자와 새로운 화자에서 비교하는 연구 개념도" loading="lazy"><span class="figure-expand" aria-hidden="true">Expand figure ↗</span></button>
-          <figcaption><span>Figure 2.</span> Examining speaker metadata under different prediction and speaker conditions. <span class="figure-note">Conceptual overview</span></figcaption>
+          <button class="figure-button" type="button" aria-label="논문 모델 구조도 크게 보기"><img src="assets/figures/prosody-architecture.svg" width="2072" height="1324" alt="논문 그림 1: RoBERTa 기반 운율 예측 모델의 전체 구조와 음절 단위 표현 구성" loading="lazy"><span class="figure-expand" aria-hidden="true">Expand figure ↗</span></button>
+          <figcaption><span>Figure 2.</span> Prosody prediction model and syllable-level representation construction. <span class="figure-note">EMNLP 2026, Figure 1</span></figcaption>
         </figure>
         <div class="paper-details">
           <div><h4>Research problem</h4><p>지역 억양과 모국어는 화자마다 붙어 있는 정보입니다. 이 정보를 추가해 성능이 좋아지더라도, 해당 범주의 효과인지 개별 화자의 특성 때문인지 구분할 필요가 있었습니다.</p></div>
@@ -132,9 +130,8 @@
         <div class="paper-links"><a class="button button-small" href="https://domestic.thinkonweb.com/society/kiice/media?key=kiice%2Fconference%2F2022f.pdf" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M5 2.5h6l4 4v11H5zM11 2.5v4h4M7.5 10h5M7.5 13h5"/></svg>Proceedings <span aria-hidden="true">↗</span></a></div>
         <p class="paper-lead">가사와 멜로디를 노래 목소리로 바꾸는 모델에서, <strong>손실함수의 균형이 생성 결과에 어떤 영향을 줄까?</strong> BEGAN-Sing을 분석하고, 손실항의 영향력을 조절하는 방법을 제안해 조건별로 비교했습니다.</p>
         <figure class="paper-figure">
-          <!-- Replace this image with the original paper architecture when ready. -->
-          <button class="figure-button" type="button" aria-label="연구 개념도 크게 보기"><img src="assets/figures/svs-overview.svg" width="1200" height="500" alt="가사와 멜로디 정보를 입력으로 가창 음성을 생성하는 개념도" loading="lazy"><span class="figure-expand" aria-hidden="true">Expand figure ↗</span></button>
-          <figcaption><span>Figure 3.</span> Modeling singing voice from lyrics and musical information. <span class="figure-note">Conceptual overview</span></figcaption>
+          <button class="figure-button" type="button" aria-label="논문 실험 결과 크게 보기"><img src="assets/figures/svs-results.svg" width="1650" height="708" alt="논문 그림 4: 서로 다른 학습 조건에서 생성한 가창 음성의 스펙트로그램과 파형 비교" loading="lazy"><span class="figure-expand" aria-hidden="true">Expand figure ↗</span></button>
+          <figcaption><span>Figure 3.</span> Spectrograms and waveforms of synthesized singing under different training settings. <span class="figure-note">KIICE Fall 2022, Figure 4</span></figcaption>
         </figure>
         <div class="paper-details">
           <div><h4>Research problem</h4><p>기존 BEGAN-Sing의 L1 손실항이 품질과 다양성을 조절하는 파라미터의 효과를 약화시키는 현상에 주목했습니다. 손실항 사이의 균형을 조절할 필요가 있었습니다.</p></div>
@@ -162,7 +159,7 @@
     </section>
   </main>
 
-  <dialog class="figure-dialog" aria-labelledby="figure-dialog-title"><div class="dialog-heading"><h2 id="figure-dialog-title">Research overview</h2><button class="dialog-close" type="button" aria-label="그림 닫기">닫기 <span aria-hidden="true">×</span></button></div><div class="figure-viewport"><img class="dialog-image" alt=""></div><p class="dialog-hint">작은 화면에서는 그림을 좌우로 움직여 자세히 볼 수 있습니다.</p></dialog>
+  <dialog class="figure-dialog" aria-labelledby="figure-dialog-title"><div class="dialog-heading"><h2 id="figure-dialog-title">Paper figure</h2><button class="dialog-close" type="button" aria-label="그림 닫기">닫기 <span aria-hidden="true">×</span></button></div><div class="figure-viewport"><img class="dialog-image" alt=""></div><p class="dialog-hint">작은 화면에서는 그림을 좌우로 움직여 자세히 볼 수 있습니다.</p></dialog>
 
   <footer class="site-footer container"><div><a class="wordmark" href="#top">박지현<span class="wordmark-dot" aria-hidden="true">.</span></a><p>Speech synthesis, prosody, and generative models.</p></div><div class="footer-right"><span>Research portfolio / 2026</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div></footer>
 </body>
