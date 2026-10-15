@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="svs-title svs-desc">
+  <title id="svs-title">Conceptual overview of singing voice synthesis</title>
+  <desc id="svs-desc">Lyrics and melody provide complementary inputs to feature modeling, which produces synthesized singing. This is a conceptual illustration, not the original model architecture.</desc>
+  <defs>
+    <marker id="svs-arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M1 1 L8 4.5 L1 8" fill="none" stroke="#526c8e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="500" fill="#fafbf9"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#202a35">
+    <text x="56" y="54" font-size="12" font-weight="700" letter-spacing="2.3" fill="#526c8e">SINGING VOICE SYNTHESIS</text>
+    <line x1="56" y1="77" x2="1144" y2="77" stroke="#dce1e5"/>
+
+    <rect x="56" y="126" width="252" height="102" rx="8" fill="#fff" stroke="#d6dce2" stroke-width="1.5"/>
+    <text x="80" y="159" font-size="11" fill="#778391" letter-spacing="1.4">INPUT 01</text>
+    <text x="80" y="188" font-size="23" font-weight="600">Lyrics</text>
+    <text x="80" y="211" font-size="14" fill="#66717d">Linguistic content</text>
+
+    <rect x="56" y="260" width="252" height="102" rx="8" fill="#fff" stroke="#d6dce2" stroke-width="1.5"/>
+    <text x="80" y="293" font-size="11" fill="#778391" letter-spacing="1.4">INPUT 02</text>
+    <text x="80" y="322" font-size="23" font-weight="600">Melody</text>
+    <text x="80" y="345" font-size="14" fill="#66717d">Musical score</text>
+
+    <g fill="none" stroke="#526c8e" stroke-width="1.8" marker-end="url(#svs-arrow)">
+      <path d="M308 177 H363 V217 H410"/>
+      <path d="M308 311 H363 V271 H410"/>
+      <path d="M744 244 H884"/>
+    </g>
+
+    <rect x="410" y="153" width="334" height="182" rx="8" fill="#edf1f5" stroke="#a6b6c8" stroke-width="1.5"/>
+    <text x="577" y="198" text-anchor="middle" font-size="11" letter-spacing="1.6" fill="#526c8e">MODEL</text>
+    <text x="577" y="237" text-anchor="middle" font-size="25" font-weight="600">Feature Modeling</text>
+    <line x1="454" y1="260" x2="700" y2="260" stroke="#cbd5df"/>
+    <text x="577" y="288" text-anchor="middle" font-size="15" fill="#66717d">From lyrics and melody</text>
+    <text x="577" y="310" text-anchor="middle" font-size="15" fill="#66717d">to a singing representation</text>
+
+    <rect x="884" y="153" width="260" height="182" rx="8" fill="#fff" stroke="#d6dce2" stroke-width="1.5"/>
+    <text x="1014" y="188" text-anchor="middle" font-size="11" letter-spacing="1.6" fill="#778391">OUTPUT</text>
+    <text x="1014" y="223" text-anchor="middle" font-size="22" font-weight="600">Synthesized Singing</text>
+    <path d="M920 283 H934 L940 272 L946 293 L952 260 L958 308 L964 253 L970 314 L976 266 L982 295 L988 276 L994 284 H1006 L1012 268 L1018 299 L1024 250 L1030 315 L1036 258 L1042 304 L1048 271 L1054 290 L1060 278 L1066 283 H1108" fill="none" stroke="#526c8e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <line x1="56" y1="415" x2="1144" y2="415" stroke="#dce1e5"/>
+    <text x="56" y="444" font-size="13" fill="#66717d">Complementary language and musical inputs for singing generation</text>
+    <text x="1144" y="475" text-anchor="end" font-size="11" fill="#89929b">Conceptual illustration</text>
+  </g>
+</svg>
