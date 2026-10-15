@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="erv-title erv-desc">
+  <title id="erv-title">Conceptual overview of emotion residual vectors for word-level control</title>
+  <desc id="erv-desc">Paired neutral and emotional speech is aligned at the word level. Differences in speech features provide emotion residual vectors for controllable text-to-speech. A separate vector predictor uses text and a target emotion at inference. This is a conceptual illustration, not the original model architecture.</desc>
+  <defs>
+    <marker id="erv-arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M1 1 L8 4.5 L1 8" fill="none" stroke="#526c8e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="500" fill="#fafbf9"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#202a35">
+    <text x="56" y="54" font-size="12" font-weight="700" letter-spacing="2.3" fill="#526c8e">WORD-LEVEL EMOTION CONTROL</text>
+    <line x1="56" y1="77" x2="1144" y2="77" stroke="#dce1e5"/>
+
+    <text x="56" y="197" font-size="11" letter-spacing="1.5" fill="#778391">LEARNING THE CONTROL SIGNAL</text>
+    <rect x="56" y="218" width="222" height="156" rx="8" fill="#fff" stroke="#d6dce2" stroke-width="1.5"/>
+    <text x="78" y="252" font-size="21" font-weight="600">Paired Speech</text>
+    <rect x="78" y="272" width="178" height="32" rx="4" fill="#f2f4f5"/>
+    <text x="167" y="293" text-anchor="middle" font-size="14" fill="#66717d">Neutral expression</text>
+    <rect x="78" y="315" width="178" height="32" rx="4" fill="#edf1f5"/>
+    <text x="167" y="336" text-anchor="middle" font-size="14" fill="#526c8e">Emotional expression</text>
+
+    <g fill="none" stroke="#526c8e" stroke-width="1.8" marker-end="url(#erv-arrow)">
+      <path d="M278 296 H330"/>
+      <path d="M570 296 H622"/>
+      <path d="M830 296 H886"/>
+      <path d="M1015 164 V218" stroke-dasharray="5 5"/>
+    </g>
+
+    <rect x="330" y="218" width="240" height="156" rx="8" fill="#fff" stroke="#d6dce2" stroke-width="1.5"/>
+    <text x="450" y="258" text-anchor="middle" font-size="20" font-weight="600">Word Alignment</text>
+    <line x1="363" y1="280" x2="537" y2="280" stroke="#dce1e5"/>
+    <text x="450" y="310" text-anchor="middle" font-size="17" fill="#526c8e">Feature Difference</text>
+    <text x="450" y="338" text-anchor="middle" font-size="13" fill="#66717d">Comparing matched words</text>
+
+    <rect x="622" y="218" width="208" height="156" rx="8" fill="#edf1f5" stroke="#a6b6c8" stroke-width="1.5"/>
+    <text x="726" y="251" text-anchor="middle" font-size="11" letter-spacing="1.5" fill="#526c8e">CONTROL SIGNAL</text>
+    <text x="726" y="285" text-anchor="middle" font-size="21" font-weight="600">Emotion</text>
+    <text x="726" y="314" text-anchor="middle" font-size="21" font-weight="600">Residual Vector</text>
+    <text x="726" y="345" text-anchor="middle" font-size="14" fill="#66717d">Word-level variation</text>
+
+    <rect x="886" y="100" width="258" height="64" rx="6" fill="#fff" stroke="#a6b6c8" stroke-width="1.3" stroke-dasharray="5 4"/>
+    <text x="1015" y="125" text-anchor="middle" font-size="14" font-weight="600">Text + Target Emotion</text>
+    <text x="1015" y="148" text-anchor="middle" font-size="13" fill="#66717d">Vector predictor at inference</text>
+
+    <rect x="886" y="218" width="258" height="156" rx="8" fill="#fff" stroke="#d6dce2" stroke-width="1.5"/>
+    <text x="1015" y="251" text-anchor="middle" font-size="11" letter-spacing="1.5" fill="#778391">GENERATION</text>
+    <text x="1015" y="289" text-anchor="middle" font-size="22" font-weight="600">Controllable TTS</text>
+    <line x1="919" y1="314" x2="1111" y2="314" stroke="#dce1e5"/>
+    <text x="1015" y="342" text-anchor="middle" font-size="14" fill="#66717d">Adjust expression by word</text>
+
+    <line x1="56" y1="415" x2="1144" y2="415" stroke="#dce1e5"/>
+    <text x="56" y="444" font-size="13" fill="#66717d">Same speaker and sentence provide paired evidence of emotional variation</text>
+    <text x="1144" y="475" text-anchor="end" font-size="11" fill="#89929b">Conceptual illustration</text>
+  </g>
+</svg>
