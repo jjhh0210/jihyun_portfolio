@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="prosody-title prosody-desc">
+  <title id="prosody-title">Conceptual overview of speaker-informed prosody prediction</title>
+  <desc id="prosody-desc">Text and speaker metadata are inputs to a hierarchical prosody predictor. Predicted prosodic features are assessed for both seen and unseen speakers. This is a conceptual illustration, not the original model architecture.</desc>
+  <defs>
+    <marker id="prosody-arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M1 1 L8 4.5 L1 8" fill="none" stroke="#526c8e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="500" fill="#fafbf9"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#202a35">
+    <text x="56" y="54" font-size="12" font-weight="700" letter-spacing="2.3" fill="#526c8e">SPEAKER-INFORMED PROSODY</text>
+    <line x1="56" y1="77" x2="1144" y2="77" stroke="#dce1e5"/>
+
+    <rect x="56" y="125" width="252" height="96" rx="8" fill="#fff" stroke="#d6dce2" stroke-width="1.5"/>
+    <text x="80" y="159" font-size="11" letter-spacing="1.5" fill="#778391">INPUT 01</text>
+    <text x="80" y="191" font-size="23" font-weight="600">Text</text>
+
+    <rect x="56" y="253" width="252" height="116" rx="8" fill="#fff" stroke="#d6dce2" stroke-width="1.5"/>
+    <text x="80" y="287" font-size="11" letter-spacing="1.5" fill="#778391">INPUT 02</text>
+    <text x="80" y="319" font-size="22" font-weight="600">Speaker Metadata</text>
+    <text x="80" y="347" font-size="14" fill="#66717d">Accent and first language</text>
+
+    <g fill="none" stroke="#526c8e" stroke-width="1.8" marker-end="url(#prosody-arrow)">
+      <path d="M308 173 H365 V212 H416"/>
+      <path d="M308 311 H365 V274 H416"/>
+      <path d="M754 243 H886"/>
+    </g>
+
+    <rect x="416" y="125" width="338" height="244" rx="8" fill="#edf1f5" stroke="#a6b6c8" stroke-width="1.5"/>
+    <text x="585" y="163" text-anchor="middle" font-size="11" letter-spacing="1.5" fill="#526c8e">MODEL</text>
+    <text x="585" y="203" text-anchor="middle" font-size="25" font-weight="600">Hierarchical</text>
+    <text x="585" y="236" text-anchor="middle" font-size="25" font-weight="600">Prosody Predictor</text>
+    <line x1="454" y1="265" x2="716" y2="265" stroke="#cbd5df"/>
+    <rect x="451" y="286" width="268" height="28" rx="4" fill="#fff" stroke="#d4dce5"/>
+    <text x="585" y="305" text-anchor="middle" font-size="13" fill="#66717d">Text representation</text>
+    <rect x="451" y="324" width="268" height="28" rx="4" fill="#fff" stroke="#d4dce5"/>
+    <text x="585" y="343" text-anchor="middle" font-size="13" fill="#66717d">Speaker conditioning</text>
+
+    <rect x="886" y="153" width="258" height="188" rx="8" fill="#fff" stroke="#d6dce2" stroke-width="1.5"/>
+    <text x="1015" y="189" text-anchor="middle" font-size="11" letter-spacing="1.5" fill="#778391">OUTPUT</text>
+    <text x="1015" y="224" text-anchor="middle" font-size="23" font-weight="600">Prosodic Features</text>
+    <g fill="#a6b6c8">
+      <rect x="934" y="279" width="15" height="31" rx="2"/>
+      <rect x="962" y="260" width="15" height="50" rx="2"/>
+      <rect x="990" y="272" width="15" height="38" rx="2"/>
+      <rect x="1018" y="248" width="15" height="62" rx="2" fill="#526c8e"/>
+      <rect x="1046" y="266" width="15" height="44" rx="2"/>
+      <rect x="1074" y="282" width="15" height="28" rx="2"/>
+    </g>
+    <line x1="923" y1="310" x2="1107" y2="310" stroke="#d6dce2"/>
+
+    <line x1="56" y1="415" x2="1144" y2="415" stroke="#dce1e5"/>
+    <text x="56" y="444" font-size="13" fill="#66717d">Evaluation across speaker conditions</text>
+    <rect x="338" y="426" width="140" height="28" rx="14" fill="#edf1f5" stroke="#d6dce2"/>
+    <text x="408" y="445" text-anchor="middle" font-size="12" fill="#526c8e">Seen speakers</text>
+    <rect x="490" y="426" width="152" height="28" rx="14" fill="#fff" stroke="#d6dce2"/>
+    <text x="566" y="445" text-anchor="middle" font-size="12" fill="#66717d">Unseen speakers</text>
+    <text x="1144" y="475" text-anchor="end" font-size="11" fill="#89929b">Conceptual illustration</text>
+  </g>
+</svg>
