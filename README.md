@@ -41,11 +41,11 @@ KIICE Fall 2022 / Third author / Oral presentation
 | 소개, 학력, 논문, 경험 | `index.html` |
 | 색상, 글꼴, 화면 구성 | `assets/styles.css` |
 | 모바일 메뉴와 현재 섹션 표시 | `assets/main.js` |
-| ERV 논문 그림 | `assets/figures/erv-overview.svg` |
-| EMNLP 논문 그림 | `assets/figures/prosody-overview.svg` |
-| SVS 논문 그림 | `assets/figures/svs-overview.svg` |
+| ERV 논문 그림 | `assets/figures/erv-architecture.svg` |
+| EMNLP 논문 그림 | `assets/figures/prosody-architecture.svg` |
+| SVS 논문 그림 | `assets/figures/svs-results.svg` |
 
-현재 그림은 연구의 흐름을 설명하는 임시 개념도입니다. 실제 모델 구조 그림으로 교체하려면 `assets/figures/`에 새 파일을 올리고, `index.html`에서 해당 `<img>`의 `src`와 설명(`alt`)을 바꾸면 됩니다. PNG나 JPG도 사용할 수 있습니다. 실제 그림을 넣은 뒤에는 해당 캡션의 `Conceptual overview` 표기도 수정할 수 있습니다.
+논문 PDF에서 추출한 원본 그림을 사용합니다. Interspeech와 EMNLP는 모델 구조도이며, 구조도가 없는 SVS 논문은 생성 결과 비교 그림을 표시합니다. 그림을 클릭하면 확대할 수 있습니다. 출처와 추출 범위는 `assets/figures/README.md`에 기록했습니다.
 
 논문 원문이 새로 공개되면 해당 논문의 `paper-links` 영역에 링크를 추가하면 됩니다. EMNLP는 공개 주소가 확인되지 않아 원문 링크를 만들지 않았습니다.
 
