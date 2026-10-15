@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fcfcfb">
+  <meta name="description" content="박지현의 연구 포트폴리오. 표현력 있는 음성합성, 운율 모델링, 생성 모델의 조건 제어를 연구합니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="박지현 | Research Portfolio">
+  <meta property="og:description" content="박지현의 음성합성 및 운율 모델링 연구 포트폴리오">
+  <meta property="og:url" content="https://jjhh0210.github.io/jihyun_portfolio/">
+  <title>박지현 | Research Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="wordmark" href="#top" aria-label="박지현 포트폴리오 처음으로">박지현<span class="wordmark-dot" aria-hidden="true">.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기"><span></span><span></span></button>
+      <nav id="site-nav" aria-label="주 메뉴">
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top" aria-labelledby="hero-title">
+      <p class="eyebrow">Speech &amp; Generative AI</p>
+      <h1 id="hero-title">박지현</h1>
+      <p class="affiliation">한양대학교 인공지능학과 석사과정</p>
+      <div class="hero-links">
+        <a class="button button-dark" href="#publications">View research <span aria-hidden="true">↓</span></a>
+        <a class="text-link" href="https://jjhh0210.github.io/EmoRes-tts-demo/" target="_blank" rel="noopener noreferrer">TTS audio demo <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="hero-footnote">Controllable speech synthesis &nbsp; / &nbsp; Prosody modeling &nbsp; / &nbsp; Conditional generation</p>
+    </section>
+
+    <section class="section container about-section" id="education" aria-labelledby="education-title">
+      <div class="section-heading"><span class="section-number">01</span><h2 id="education-title">Education</h2><span class="section-subtitle">Academic background</span></div>
+      <div class="education-list">
+        <article class="education-item">
+          <div class="education-year">2025 — 2027<span>Expected Feb. 2027</span></div>
+          <div><h3>한양대학교</h3><p>인공지능학과 석사과정</p><p class="muted">M.S. in Artificial Intelligence</p></div>
+          <span class="degree-label">Graduate</span>
+        </article>
+        <article class="education-item">
+          <div class="education-year">2017 — 2022<span>Feb. 2022</span></div>
+          <div><h3>이화여자대학교</h3><p>컴퓨터공학과 학사</p><p class="muted">B.S. in Computer Science</p></div>
+          <span class="degree-label">Undergraduate</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="research-band" id="research" aria-labelledby="research-title">
+      <div class="container">
+        <div class="section-heading"><span class="section-number">02</span><h2 id="research-title">Research interests</h2><span class="section-subtitle">Questions I explore</span></div>
+        <div class="research-grid">
+          <article><span class="research-index">I.</span><h3>Controllable<br>Speech Synthesis</h3><p>문장 전체의 자연스러움을 유지하면서, 원하는 단어의 감정과 표현을 세밀하게 조절하는 방법을 연구합니다.</p></article>
+          <article><span class="research-index">II.</span><h3>Prosody &amp;<br>Speaker Modeling</h3><p>음성의 운율에 어떤 정보가 필요한지 살펴보고, 화자와 사용 조건이 달라져도 그 정보가 유용한지 검증합니다.</p></article>
+          <article><span class="research-index">III.</span><h3>Conditional<br>Generative Models</h3><p>Diffusion Language Model 기반 음성합성에서 자연어 지시와 참조 음성의 역할을 살펴보고, 각 입력 조건이 생성에 미치는 영향을 분석합니다.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container publications-section" id="publications" aria-labelledby="publications-title">
+      <div class="section-heading"><span class="section-number">03</span><h2 id="publications-title">Publications</h2><span class="section-subtitle">Selected research</span></div>
+      <p class="section-description">음성의 표현을 제어하고, 필요한 정보를 검증하며, 모델을 직접 구현한 연구입니다.</p>
+      <div class="publication-index" aria-label="논문 바로가기">
+        <a href="#paper-erv"><span>2026</span> Emotional TTS <span aria-hidden="true">↘</span></a>
+        <a href="#paper-prosody"><span>2026</span> Prosody prediction <span aria-hidden="true">↘</span></a>
+        <a href="#paper-svs"><span>2022</span> Singing voice synthesis <span aria-hidden="true">↘</span></a>
+      </div>
+
+      <article class="paper" id="paper-erv" aria-labelledby="erv-title">
+        <div class="paper-meta"><span class="venue-badge">INTERSPEECH 2026</span><span>First author</span><span class="paper-type">Conference paper</span></div>
+        <h3 id="erv-title">Word-level Emotional Intensity Control in TTS<br class="desktop-break"> via Emotion Residual Vectors</h3>
+        <p class="paper-korean-title">단어별 감정 강도를 조절하는 음성합성</p>
+        <p class="authors"><strong>Ji-Hyun Park</strong>, Nam-Seok Song, Joon-Hyuk Chang</p>
+        <div class="paper-links">
+          <a class="button button-small" href="https://www.isca-archive.org/interspeech_2026/park26i_interspeech.html" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M5 2.5h6l4 4v11H5zM11 2.5v4h4M7.5 10h5M7.5 13h5"/></svg>Paper <span aria-hidden="true">↗</span></a>
+          <a class="button button-small" href="https://jjhh0210.github.io/EmoRes-tts-demo/" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M3 11V9a7 7 0 0 1 14 0v2M3 10h3v6H3zM14 10h3v6h-3z"/></svg>Audio demo <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="paper-lead">문장의 감정을 바꾸는 데서 더 나아가, <strong>원하는 단어의 감정 강도만 조절할 수 있을까?</strong> 단어별 강도 정답이 없는 데이터에서 출발해, 중립 음성과 감정 음성의 차이를 새로운 학습 신호로 활용했습니다.</p>
+        <figure class="paper-figure">
+          <!-- Replace this image with the original paper architecture when ready. -->
+          <button class="figure-button" type="button" aria-label="연구 개념도 크게 보기"><img src="assets/figures/erv-overview.svg" width="1200" height="500" alt="중립과 감정 발화의 차이에서 단어별 감정 벡터를 만들고 음성합성에 활용하는 연구 개념도" loading="lazy"><span class="figure-expand" aria-hidden="true">Expand figure ↗</span></button>
+          <figcaption><span>Figure 1.</span> Paired speech differences as a signal for word-level emotional control. <span class="figure-note">Conceptual overview</span></figcaption>
+        </figure>
+        <div class="paper-details">
+          <div><h4>Research problem</h4><p>기존의 문장 단위 감정 조건만으로는 특정 단어의 표현을 세밀하게 바꾸기 어렵습니다. 단어별 감정 강도 라벨이 없다는 점도 학습의 제약이었습니다.</p></div>
+          <div><h4>Approach</h4><p>같은 화자가 동일한 문장을 중립과 감정으로 발화한 음성을 정렬하고, WavLM 특징의 차이로 단어별 Emotion Residual Vector를 구성했습니다. 압축한 벡터를 합성 모델의 제어 정보로 사용했습니다.</p></div>
+          <div><h4>My contribution</h4><p>학습 신호 구성부터 제어 구조와 텍스트 기반 벡터 예측 모델 구현, 비교 실험과 청취평가까지 수행했습니다. 추론할 때 발화쌍이 없어도 텍스트와 목표 감정으로 제어할 수 있도록 설계했습니다.</p></div>
+        </div>
+        <div class="paper-outcome"><span class="outcome-label">Outcome</span><p>객관 지표와 청취평가로 감정 제어 성능과 자연스러움을 검증했습니다. Interspeech 2026에 제1저자 논문으로 채택되어 포스터를 발표했습니다.</p></div>
+        <details class="technical-details"><summary>실험과 평가 자세히 보기 <span aria-hidden="true">+</span></summary><div><p>감정 벡터의 구성과 압축 설정을 바꾸는 실험으로 설계의 효과를 살폈습니다. 기존 음성합성 모델과 비교하면서 감정 표현뿐 아니라 발음 정확도와 사람이 듣는 자연스러움도 함께 평가했습니다.</p><p>감정 제어를 위한 정보를 학습 단계에서 추출하는 것에 그치지 않고, 실제 생성 시점에 그 정보를 얻는 방법까지 연결한 연구입니다.</p></div></details>
+      </article>
+
+      <article class="paper" id="paper-prosody" aria-labelledby="prosody-title">
+        <div class="paper-meta"><span class="venue-badge">FINDINGS OF EMNLP 2026</span><span>Second author</span><span class="paper-type">Accepted</span></div>
+        <h3 id="prosody-title">Auditing Speaker-Level Metadata Utility<br class="desktop-break"> in Text-Residual Prosody Prediction</h3>
+        <p class="paper-korean-title">운율 예측에서 화자 정보의 효용을 검증한 연구</p>
+        <p class="authors">Gaeun Kim, <strong>Jihyun Park</strong>, Sohee Jang, Joon-Hyuk Chang</p>
+        <p class="paper-lead">화자의 지역 억양과 모국어 정보를 더하면 운율을 더 잘 예측할 수 있을까? <strong>정보를 추가하는 것 자체보다, 어떤 예측 대상과 사용 조건에서 도움이 되는지</strong>를 확인하는 데 초점을 맞췄습니다.</p>
+        <figure class="paper-figure">
+          <!-- Replace this image with the original paper architecture when ready. -->
+          <button class="figure-button" type="button" aria-label="연구 개념도 크게 보기"><img src="assets/figures/prosody-overview.svg" width="1200" height="500" alt="텍스트와 화자 메타데이터로 운율을 예측하고 학습 화자와 새로운 화자에서 비교하는 연구 개념도" loading="lazy"><span class="figure-expand" aria-hidden="true">Expand figure ↗</span></button>
+          <figcaption><span>Figure 2.</span> Examining speaker metadata under different prediction and speaker conditions. <span class="figure-note">Conceptual overview</span></figcaption>
+        </figure>
+        <div class="paper-details">
+          <div><h4>Research problem</h4><p>지역 억양과 모국어는 화자마다 붙어 있는 정보입니다. 이 정보를 추가해 성능이 좋아지더라도, 해당 범주의 효과인지 개별 화자의 특성 때문인지 구분할 필요가 있었습니다.</p></div>
+          <div><h4>Approach</h4><p>VCTK와 L2-ARCTIC에서 텍스트, 메타데이터, 화자 정보를 조합해 같은 구조의 모델을 비교했습니다. 화자 정보의 영향을 통제하고, 학습에서 접한 화자와 새로운 화자에서 효용을 따로 평가했습니다.</p></div>
+          <div><h4>My contribution</h4><p>단어의 강조도와 경계 강도, 음절의 음높이 변화와 상대적 길이를 예측 대상으로 구성했습니다. 운율 특징을 조사하고 RoBERTa 기반 계층적 예측 모델을 설계해 구현했습니다.</p></div>
+        </div>
+        <div class="paper-outcome"><span class="outcome-label">Outcome</span><p>화자 정보를 이미 제공한 경우 메타데이터의 추가 효용은 작았으며, 새로운 화자로의 일반화는 예측 대상에 따라 달랐습니다. Findings of EMNLP 2026에 제2저자 논문으로 채택되었습니다.</p></div>
+        <details class="technical-details"><summary>연구 관점 자세히 보기 <span aria-hidden="true">+</span></summary><div><p>학습에서 접한 화자에게 유용했던 정보가 새로운 화자에게도 같은 효과를 내는지 구분해 확인했습니다. 모델의 전체 성능과 별개로, 입력 정보의 효용을 평가 조건에 따라 해석하는 데 중점을 뒀습니다.</p><p>화자 정보를 일괄적으로 유효하다고 가정하기보다, 그 정보가 설명하는 예측 대상과 일반화 조건을 먼저 정의한 연구입니다.</p></div></details>
+      </article>
+
+      <article class="paper" id="paper-svs" aria-labelledby="svs-title">
+        <div class="paper-meta"><span class="venue-badge">KIICE FALL 2022</span><span>Co-author</span><span class="paper-type">Oral presentation</span></div>
+        <h3 id="svs-title">Deep Learning based<br class="desktop-break"> Singing Voice Synthesis Modeling</h3>
+        <p class="paper-korean-title">딥러닝 기반 가창 음성합성 모델링</p>
+        <p class="authors">Minae Kim, Somin Kim, <strong>Jihyun Park</strong>, Gabin Heo, Yunjeong Choi</p>
+        <div class="paper-links"><a class="button button-small" href="https://domestic.thinkonweb.com/society/kiice/media?key=kiice%2Fconference%2F2022f.pdf" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true" viewBox="0 0 20 20"><path d="M5 2.5h6l4 4v11H5zM11 2.5v4h4M7.5 10h5M7.5 13h5"/></svg>Proceedings <span aria-hidden="true">↗</span></a></div>
+        <p class="paper-lead">가사와 멜로디를 노래 목소리로 바꾸는 모델에서, <strong>손실함수의 균형이 생성 결과에 어떤 영향을 줄까?</strong> BEGAN-Sing을 분석하고, 손실항의 영향력을 조절하는 방법을 제안해 조건별로 비교했습니다.</p>
+        <figure class="paper-figure">
+          <!-- Replace this image with the original paper architecture when ready. -->
+          <button class="figure-button" type="button" aria-label="연구 개념도 크게 보기"><img src="assets/figures/svs-overview.svg" width="1200" height="500" alt="가사와 멜로디 정보를 입력으로 가창 음성을 생성하는 개념도" loading="lazy"><span class="figure-expand" aria-hidden="true">Expand figure ↗</span></button>
+          <figcaption><span>Figure 3.</span> Modeling singing voice from lyrics and musical information. <span class="figure-note">Conceptual overview</span></figcaption>
+        </figure>
+        <div class="paper-details">
+          <div><h4>Research problem</h4><p>기존 BEGAN-Sing의 L1 손실항이 품질과 다양성을 조절하는 파라미터의 효과를 약화시키는 현상에 주목했습니다. 손실항 사이의 균형을 조절할 필요가 있었습니다.</p></div>
+          <div><h4>Approach</h4><p>L1 손실의 가중치를 조절하는 파라미터를 추가하고, 두 파라미터의 9개 조합으로 학습했습니다. 생성 음성의 스펙트로그램을 비교하고 37명 청취평가로 발음과 품질, 자연스러움을 평가했습니다.</p></div>
+          <div><h4>My contribution</h4><p>선행 논문과 코드를 분석하고 손실함수 개선을 제안했습니다. 조건별 튜닝 실험과 생성 음성 비교, 정성평가 설계에 참여했습니다. 공동연구 논문의 제3저자입니다.</p></div>
+        </div>
+        <div class="paper-outcome"><span class="outcome-label">Outcome</span><p>제52회 한국정보통신학회 추계종합학술대회에서 구두 발표한 공동연구 논문입니다. 학술대회 논문집 127–130쪽에 수록되었습니다.</p></div>
+      </article>
+    </section>
+
+    <section class="experience-band" id="experience" aria-labelledby="experience-title">
+      <div class="container section">
+        <div class="section-heading"><span class="section-number">04</span><h2 id="experience-title">Beyond research</h2><span class="section-subtitle">Engineering &amp; collaboration</span></div>
+        <div class="experience-list">
+          <article class="experience-item">
+            <div class="experience-date">2023.01 — 07<span>840 hours</span></div>
+            <div class="experience-content"><p class="experience-category">AI Engineering</p><h3>KT AIVLE School 3기</h3><p class="experience-subtitle">AI 개발자 트랙 / Big Project Excellence상</p><p>AI 자기소개서 서비스 ‘오린’에서 백엔드와 모델 서빙을 맡았습니다. 웹 요청 처리와 모델 추론을 분리하고 FastAPI로 연결했으며, 병렬 처리와 팀 단위 부하 분산으로 서비스의 응답 성능을 개선했습니다.</p><p class="experience-result">3문단 3,000자 기준 소제목 생성 <strong>18초 → 5초</strong>. 동시 요청 <strong>20건 이상</strong> 처리.</p></div>
+          </article>
+          <article class="experience-item">
+            <div class="experience-date">2023.05<span>Grand Prize</span></div>
+            <div class="experience-content"><p class="experience-category">Data Analysis</p><h3>공공데이터 기반 청소년상담복지사업<br class="desktop-break"> 국민 아이디어 공모전</h3><p class="experience-subtitle">대상 / 여성가족부 장관상</p><p>청소년 사이버폭력 데이터를 분석하고 예방을 위한 활용 방안을 제안했습니다. 팀원마다 달랐던 전처리와 모델 비교 기준을 맞추고, 통계 분석과 SHAP으로 결과를 해석해 제안의 근거를 정리했습니다.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="figure-dialog" aria-labelledby="figure-dialog-title"><div class="dialog-heading"><h2 id="figure-dialog-title">Research overview</h2><button class="dialog-close" type="button" aria-label="그림 닫기">닫기 <span aria-hidden="true">×</span></button></div><div class="figure-viewport"><img class="dialog-image" alt=""></div><p class="dialog-hint">작은 화면에서는 그림을 좌우로 움직여 자세히 볼 수 있습니다.</p></dialog>
+
+  <footer class="site-footer container"><div><a class="wordmark" href="#top">박지현<span class="wordmark-dot" aria-hidden="true">.</span></a><p>Speech synthesis, prosody, and generative models.</p></div><div class="footer-right"><span>Research portfolio / 2026</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div></footer>
+</body>
+</html>
